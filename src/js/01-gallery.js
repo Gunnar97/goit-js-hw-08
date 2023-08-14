@@ -26,4 +26,4 @@ let lightbox = new SimpleLightbox('.gallery a', {
     signmentDelay: 250
 });
 
-const a = 5;
+
