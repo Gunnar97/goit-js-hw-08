@@ -25,3 +25,5 @@ let lightbox = new SimpleLightbox('.gallery a', {
     signmentPosition: 'bottom',
     signmentDelay: 250
 });
+
+const a = 5;
