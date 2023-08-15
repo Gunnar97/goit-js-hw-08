@@ -7,7 +7,7 @@ const save = (key, value) => {
   }
 };
 
-const load = key => {
+const load = (key) => {
   try {
     const serializedState = localStorage.getItem(key);
     return serializedState === null ? undefined : JSON.parse(serializedState);
@@ -16,7 +16,17 @@ const load = key => {
   }
 };
 
+
+const remove = (key) => {
+  try {
+    localStorage.removeItem(key);
+  } catch (error) {
+    console.error("Get state error: ", error.message);
+  }
+};
+
 export default {
   save,
   load,
+  remove,
 };
